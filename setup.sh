@@ -1,11 +1,12 @@
 #!/bin/bash
 
+
+
+sudo apt install qemu-kvm ovmf snapd
 sudo snap install codium
 
-sudo apt install qemu-kvm ovmf
-
-mkdir "~/bin"
-mkdir -p "~/wrk/test"
+mkdir ~/bin
+mkdir -p ~/wrk/test
 
 cat > ~/bin/efitest.sh <<EOF
 #!/bin/bash
